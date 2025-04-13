@@ -1,0 +1,175 @@
+/* src/components/SkogsvärdeDashboard.css */
+
+/* Grundläggande stilar */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Laddningsindikator */
+  .loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Rubriker */
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #1e3a8a;
+  }
+  
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1e40af;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1e3a8a;
+  }
+  
+  /* Kort-stil för sektioner */
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  
+  /* Grafinställningar */
+  .chart-container {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 16px;
+  }
+  
+  /* Tooltip stilar */
+  .tooltip {
+    background-color: white;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tooltip-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .tooltip-event {
+    margin-top: 8px;
+    font-style: italic;
+    color: #4b5563;
+  }
+  
+  /* Statistikpanel */
+  .stats-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .stats-box {
+    border-radius: 6px;
+    padding: 16px;
+  }
+  
+  .stats-box.blue {
+    background-color: #e0f2fe;
+  }
+  
+  .stats-box.green {
+    background-color: #dcfce7;
+  }
+  
+  .stats-item {
+    margin-bottom: 8px;
+  }
+  
+  .stats-label {
+    font-weight: 500;
+  }
+  
+  /* Slutsatser */
+  .conclusions {
+    background-color: #f8fafc;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 24px;
+  }
+  
+  .conclusions-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 8px;
+  }
+  
+  .conclusions-list li {
+    margin-bottom: 8px;
+  }
+  
+  /* Sidfot */
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 32px;
+  }
+  
+  /* Notering */
+  .note {
+    font-style: italic;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  /* Responsiv design - två kolumner för större skärmar */
+  @media (min-width: 768px) {
+    .stats-panel {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    h1 {
+      font-size: 32px;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+  }
+  
+  /* För mindre mobila enheter */
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .card {
+      padding: 16px;
+    }
+    
+    .chart-container {
+      height: 300px;
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+  }
